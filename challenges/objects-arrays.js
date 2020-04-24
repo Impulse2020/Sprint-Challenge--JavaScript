@@ -36,7 +36,7 @@ let velociraptor = {
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log(tyrannosaurus.length);
+console.log(tyrannosaurus.weight);
 
 // What was the diet of a velociraptor?
 console.log(velociraptor.diet);
@@ -112,6 +112,12 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 const displayNames = [];
+let i = 0;
+zooAnimals.forEach(element=>  {
+  displayNames.push(`Name : ${zooAnimals[i].animal_name}`);
+  displayNames.push(`Scientific : ${zooAnimals[i].scientific_name}`);
+  i++; 
+})
 console.log(displayNames);
 
 /* Request 2: .map()
