@@ -26,13 +26,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+.foreach is a substitute for a for loop, and is good at iterating through data. .map is used to create a new array containing certain information.
+foreach is better for when you want to manipulate data for every element, whereas map is more for extracting specific data from an array.
+
 2. Explain the difference between a callback and a higher order function.
+A higher order function takes another function aka a callback as a parameter.
+A callback is used by a higher order function.
 
 3. What is closure?
 
+Closing out a function with a return.
+
 4. Describe the four rules of the 'this' keyword.
 
+Global/window,
+Implicit binding,
+explicit binding,
+
 5. Why do we need super() in an extended class?
+
+To tell our classes where to extend to.
 
 ### Task 1 - Project Set up
 
