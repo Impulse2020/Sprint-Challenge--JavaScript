@@ -118,7 +118,7 @@ zooAnimals.forEach(element=>  {
   displayNames.push(`Scientific : ${zooAnimals[i].scientific_name}`);
   i++; 
 })
-console.log(displayNames);
+//console.log(displayNames);
 
 /* Request 2: .map()
 
@@ -126,7 +126,10 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 
 */
 
-const lowCaseAnimalNames = [];
+const lowCaseAnimalNames = zooAnimals.map(element => {
+    name : element.animal_name.toLowerCase();
+})
+
 console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter() 
